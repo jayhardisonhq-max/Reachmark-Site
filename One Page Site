@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ReachMark • More booked calls for real estate pros</title>
+  <meta name="description" content="Done-for-you outreach and lead-to-booking automations for real estate agents and brokerages. Faster follow-up, more booked calls, zero extra work." />
+  <meta property="og:title" content="ReachMark • More booked calls for real estate pros" />
+  <meta property="og:description" content="Done-for-you outreach and lead-to-booking automations for real estate agents and brokerages." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-image.png" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b1020;       /* deep navy */
+      --card: #121a33;     /* card navy */
+      --text: #e6eaf3;     /* light text */
+      --muted: #a7b1c6;    /* muted text */
+      --brand: #60a5fa;    /* blue */
+      --accent: #34d399;   /* green */
+      --danger: #f87171;   /* red */
+      --ring: rgba(96,165,250,.4);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif; }
+    a { color: var(--brand); text-decoration: none; }
+    .container { width: min(1120px, 92vw); margin: 0 auto; }
+    .nav { display:flex; justify-content:space-between; align-items:center; padding:18px 0; }
+    .logo { display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.3px; }
+    .logo-mark { width:34px; height:34px; border-radius:10px; background: linear-gradient(135deg, var(--brand), var(--accent)); box-shadow: 0 6px 30px rgba(52,211,153,.25); }
+    .nav a.btn { padding:10px 16px; border-radius:12px; background: var(--brand); color:#031023; font-weight:700; }
+
+    .hero { padding: 56px 0 32px; text-align:center; }
+    .eyebrow { display:inline-block; padding:6px 10px; border-radius:999px; background: rgba(96,165,250,.14); color: var(--brand); font-weight:600; font-size:14px; }
+    h1 { font-size: clamp(28px, 4.2vw, 48px); line-height:1.08; margin:16px 0 14px; }
+    .sub { color: var(--muted); font-size: clamp(16px, 2.2vw, 20px); }
+    .cta { margin-top: 28px; display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
+    .btn { display:inline-flex; align-items:center; gap:10px; padding:14px 18px; border-radius:14px; font-weight:700; }
+    .btn.primary { background: linear-gradient(135deg, var(--brand), #7dd3fc); color:#0b1020; box-shadow: 0 10px 36px rgba(96,165,250,.28); }
+    .btn.secondary { background: #1a2447; color: var(--text); border: 1px solid #25315c; }
+
+    .trust { margin: 36px auto 0; display:flex; gap:18px; justify-content:center; color: var(--muted); font-size:14px; flex-wrap:wrap; }
+
+    .section { padding: 60px 0; }
+    .cards { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+    .card { background: var(--card); border:1px solid #1b2446; padding: 22px; border-radius: 16px; }
+    .card h3 { margin: 0 0 8px; font-size: 20px; }
+    .card p { margin: 0; color: var(--muted); }
+
+    .grid-2 { display:grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    @media (max-width: 860px){ .grid-2 { grid-template-columns: 1fr; } }
+
+    .badge { display:inline-block; padding:6px 10px; border-radius:999px; background: rgba(52,211,153,.15); color: var(--accent); font-weight:700; font-size:12px; letter-spacing:.2px; }
+
+    .pricing { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+    .tier { background: var(--card); border:1px solid #1b2446; padding: 24px; border-radius: 18px; }
+    .price { font-size: 28px; font-weight: 800; margin: 6px 0 12px; }
+    .ul { margin: 0; padding-left: 18px; color: var(--muted); }
+
+    .footer { padding: 28px 0 40px; border-top: 1px solid #1b2446; color: var(--muted); font-size: 14px; }
+    .footer a { color: var(--muted); }
+
+    .kpis { display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; margin-top: 18px; }
+    .kpi { background:#0e1630; border:1px dashed #233061; padding:16px; border-radius:14px; text-align:center; }
+    .kpi b { font-size:22px; display:block; }
+  </style>
+</head>
+<body>
+  <header class="container nav">
+    <div class="logo"><span class="logo-mark"></span> ReachMark</div>
+    <nav>
+      <a class="btn" href="#book">Book a Call</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <span class="eyebrow">Done‑for‑you automations for real estate</span>
+      <h1>Turn more leads into <span style="color:var(--accent)">booked calls</span> — without extra work.</h1>
+      <p class="sub">We set up instant follow‑up, smart nurture, and simple reporting. You focus on showings and closings.</p>
+      <div class="cta">
+        <a class="btn primary" href="#book">Get a free 15‑min audit</a>
+        <a class="btn secondary" href="#how">See how it works</a>
+      </div>
+      <div class="trust">
+        <span>Fast setup</span> • <span>Zero‑risk trial</span> • <span>Keep it only if it works</span>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><b>↘ 60s</b> speed‑to‑lead</div>
+        <div class="kpi"><b>30–40%</b> more replies*</div>
+        <div class="kpi"><b>24/7</b> follow‑up</div>
+      </div>
+    </section>
+
+    <section id="how" class="section container">
+      <div class="grid-2">
+        <div>
+          <span class="badge">How it works</span>
+          <h2>Simple system, real results</h2>
+          <p class="sub">Leads get a fast, friendly reply. Qualified buyers book time on your calendar. No one slips through the cracks.</p>
+          <div class="cards">
+            <div class="card">
+              <h3>1) Capture</h3>
+              <p>We connect your lead sources (Zillow, site forms, ads) into a single pipeline.</p>
+            </div>
+            <div class="card">
+              <h3>2) Instant reply</h3>
+              <p>SMS + email in under 60 seconds, with your voice and branding.</p>
+            </div>
+            <div class="card">
+              <h3>3) Booked calls</h3>
+              <p>Leads pick a time on your calendar. You get notified automatically.</p>
+            </div>
+            <div class="card">
+              <h3>4) Nurture</h3>
+              <p>Polite follow‑ups over days/weeks so warm leads come back when ready.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card" style="height:100%">
+            <h3 style="margin-top:0">What you get</h3>
+            <ul class="ul">
+              <li>Done‑for‑you setup in Make/HubSpot (or your CRM)</li>
+              <li>Templates for emails, SMS, and booking flows</li>
+              <li>Dashboard for replies, bookings, and ROI</li>
+              <li>Friendly support + tweaks as you grow</li>
+            </ul>
+            <p style="margin-top:14px;color:var(--muted)">*Typical results for teams that respond faster and follow up consistently. Your mileage may vary.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <span class="badge">Packages</span>
+      <h2>Start small or go hands‑off</h2>
+      <div class="pricing">
+        <div class="tier">
+          <h3>Starter</h3>
+          <div class="price">$499 setup</div>
+          <ul class="ul">
+            <li>Connect one lead source</li>
+            <li>Instant SMS + email reply</li>
+            <li>Calendar booking link</li>
+            <li>Lite reporting</li>
+          </ul>
+          <div class="cta" style="justify-content:flex-start"><a class="btn primary" href="#book">Book audit</a></div>
+        </div>
+        <div class="tier" style="border-color:#2a3a78">
+          <h3>Pro</h3>
+          <div class="price">$999 setup</div>
+          <ul class="ul">
+            <li>Up to 3 lead sources</li>
+            <li>Smart follow‑up sequences</li>
+            <li>HubSpot/CRM integration</li>
+            <li>Weekly KPI email</li>
+          </ul>
+          <div class="cta" style="justify-content:flex-start"><a class="btn primary" href="#book">Book audit</a></div>
+        </div>
+        <div class="tier">
+          <h3>Done‑For‑You</h3>
+          <div class="price">Custom</div>
+          <ul class="ul">
+            <li>All Pro features</li>
+            <li>Outbound outreach included</li>
+            <li>Reporting dashboard</li>
+            <li>Month‑to‑month, cancel anytime</li>
+          </ul>
+          <div class="cta" style="justify-content:flex-start"><a class="btn primary" href="#book">Book audit</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="book" class="section container">
+      <div class="grid-2">
+        <div>
+          <h2>Free 15‑minute audit</h2>
+          <p class="sub">We’ll look at your current follow‑up, speed‑to‑lead, and booking flow, then give you a simple plan to improve. No pressure.</p>
+          <div class="cards">
+            <div class="card"><h3>What we check</h3><p>Lead sources, response time, calendar, CRM.</p></div>
+            <div class="card"><h3>What you get</h3><p>Quick wins you can use right away — or we set it up for you.</p></div>
+          </div>
+          <div class="cta" style="margin-top:18px">
+            <a class="btn primary" href="https://calendly.com/YOUR-CALENDLY-SLUG/intro-call" target="_blank" rel="noopener">Pick a time</a>
+            <a class="btn secondary" href="mailto:hello@yourdomain.com">Email us</a>
+          </div>
+        </div>
+        <div>
+          <!-- Calendly inline embed (optional). Replace data-url below) -->
+          <div class="card" style="padding:0; overflow:hidden">
+            <div id="calendly-inline-widget" style="min-width:320px; height:580px"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <div style="display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap">
+      <span>© <span id="year"></span> ReachMark — All rights reserved.</span>
+      <span>
+        <a href="#" title="Privacy Policy">Privacy</a> ·
+        <a href="#" title="Terms of Service">Terms</a>
+      </span>
+    </div>
+  </footer>
+
+  <!-- Optional: Calendly embed script. Replace YOUR-CALENDLY-SLUG below to enable inline booking. -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Uncomment to enable Calendly inline embed
+    // (function() {
+    //   var d = document, w = window;
+    //   var s = d.createElement("script"); s.type = "text/javascript"; s.async = true;
+    //   s.src = "https://assets.calendly.com/assets/external/widget.js";
+    //   var x = d.getElementsByTagName("script")[0]; x.parentNode.insertBefore(s, x);
+    //   s.onload = function(){
+    //     var el = document.getElementById('calendly-inline-widget');
+    //     if (el) {
+    //       el.setAttribute('data-url', 'https://calendly.com/YOUR-CALENDLY-SLUG/intro-call');
+    //       el.className = 'calendly-inline-widget';
+    //     }
+    //   };
+    // })();
+  </script>
+</body>
+</html>
